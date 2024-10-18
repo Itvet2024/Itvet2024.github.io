@@ -1,38 +1,246 @@
 <!DOCTYPE html>
-<html>
-
-    <head>
-
-            <style>
-
-
-
-            </style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MG Group - Real Estate Agency</title>
 
 
 
 
-    </head>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+                        
+        div, nav {
+            display: inline-block; /* Align div and nav inline */
+            vertical-align: top; /* Aligns the top of the elements */
+        }
+        nav ul {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0; /* Remove padding */
+            margin: 0; /* Remove margin */
+        }
+        nav ul li {
+            display: inline; /* Display list items in a line */
+            margin-right: 15px; /* Spacing between list items */
+        }
 
-    <body>
-        <ul>
-            <li> p = პარაგრაფი (ტექსტი ჩვეულებრივი)  </li>
-            <li> h1-h6 = სათაური (დიდი შრიფტით) </li>
-            <li> ul, ol, li = ლისტები, (დანომრილი და არადანომრილი) </li>
-            <li> br = brake (აბზაცი)</li>
-            <li> dl, dt, dd = სიტყვა და შემდგომ განმარტება</li>
-            <li> strong = Bold font</li>
-            <li> em = italic font</li>
-            <li> img src="URL" = ფოტოს ჩაგდება</li>
-            <li> abbr title="" = კურსორის მიტნისას ტექსტის გამოტანა</li>
-            <li> q = ""</li>
-            <li>sub,sup = ინდექსი ზევით ქვევით</li>
+        /*website header menu */
 
-        </ul>
+        header {
+            background-color: white;
+            padding:  0.220%;
+            padding-top: 0.30%;
+            font-family: sans-serif;
+        }
+
+        /* header menu logo */
+
+        .logo {
+            
+            border-radius:  87px;
+            border-style: solid;
+            border-color: rgb(255, 255, 255);
+            margin-left: 55%;
+            width: 15%;
+            
+        }
+        
+        /* MG Group in Header */
+        
+        .mg {
+            float: right;
+            padding-right: 3%;
+            color: rgb(46, 19, 99);
+            
+        }
+
+        .header_menu {
+            margin-top: 23.5px;
+        }
+
+        .header_menu ul li {
+            font-size: 13.5px;
+            margin-left: 100px;
+            padding-left: -30px;
+        }
+
+        a.white {
+            color: rgb(35, 34, 34);
+            text-decoration: none;
+        }
+        
+        a.white:hover {
+            color: lightblue;
+            background-color: transparent;
+        }
+        
+        .center-content {
+            position: relative;
+            text-align: center;
+            color: white;
+            font-family:helvetica; 
+            background-color: rgb(240, 240, 240);
+        }
+        
+        .center-text {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .center-img {
+            filter: brightness(55%);
+        }
+
+        .center-button {
+            position: absolute;
+            top: 57%;
+            left: 44%;
+            padding: 15px;
+            border: 3px outset;
+            border-color: white;
+            border-radius: 20px;
+            background-color: rgb(48, 143, 191);
+            color: white;
+            padding-left: 30px;
+            padding-right: 30px;
+            opacity: 90%;
+            text-decoration: none;
+            
+        }
+        .center-content h2 {
+            color: rgb(84, 84, 84);
+        }
+        .center-content p {
+            color: rgb(84, 84, 84);
+            font-size: large;
+        }
+
+        .main-services {
+            padding: 15px;
+            margin-left: 12%;
+        }
+
+        .main-service p {
+            font-size: large;
+        }
+
+        .left-service {
+            text-align: center;
+            border: 1px solid;
+            border-radius: 9px;
+            background-color: rgb(57, 172, 230);
+            width: 25%;
+            color: white;
+            padding: 10px;
+            font-family:monospace;
+            float: left;
+            margin-left:2%;
+            padding-bottom: 4%;
+        }
+        
+        .middle-service {
+            text-align: center;
+            border: 1px solid;
+            border-radius: 9px;
+            background-color: rgb(57, 172, 230);
+            width: 25%;
+            color: white;
+            padding: 10px;
+            font-family:monospace;
+            float: left;
+            margin-left:2%;
+            padding-bottom: 4%;
+        }
+        .right-service {
+            text-align: center;
+            border: 1px solid;
+            border-radius: 9px;
+            background-color: rgb(57, 172, 230);
+            width: 25%;
+            color: white;
+            padding: 10px;
+            font-family:monospace;
+            float: left;
+            margin-left:2%;
+            padding-bottom: 5%;
+        }
+
+        .main-services img {
+            margin-top: 5%;
+        }
+        .main-services h2 {
+            margin-top: 8.7%
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container" >
+            
+           <div class="header">
+            <h2 class="mg">MG Group</h2>
+                <a href="#"><img class="logo" src="efb437fc-725a-439a-90b7-5b882434ced6_Thumb.jpg" alt="MG Group Logo" title="MG Group Logo" width="6%"></a>
+            </div>
+            <nav class="header_menu">
+                
+                <ul>
+                    <li><a class="white" href="#">Home</a></li>
+                    <li><a class="white" href="#about">About Us</a></li>
+                    <li><a class="white" href="#listings">Listings</a></li>
+                    <li><a class="white" href="#services">Services</a></li>
+                    <li><a class="white" href="#contact">Contact</a></li>
+                </ul>
+        
+            </nav>
+        </div>
+    </header>
+    <main>
+
+        <div class="center-content">
+            <img class="center-img" src="binaa.jpg" alt="მისაქციელის სახლი" width="100%">
+            <h1 class="center-text">Real Estate in Georgia <br> <hr>
+            We assist you to buy and manage real estate property</h1>
+            <a href="#services" class="center-button">OUR SERVICES</a>
+                <h2 id="services">MG Group Services</h2>
+                <hr style="width:9%; border: 3px solid; border-radius: 10px; border-color: aqua;">
+                <p>MG Group offers you real estate purchase, renovation and property management services. We work to get you always the best deal.</p>
+        </div>
+
+
+        <div class="main-services">
+            <section class="left-service">
+                <img src="agreement.png" alt="" width="12%"> 
+                <br>
+                <h2>Buy/Rent Real Estate in Georgia</h2>
+                <p>We guide you selecting the best property with the highest cash flow</p>
+            </section>
+            
+            <section class="middle-service">
+                <img src="contract.png" alt="" width="12%">
+                <br> 
+                <h2>Legal Support</h2>
+                <p>We handle due diligence, pre-purchase inspection, negotiation and registration</p>
+            </section>
+
+            <section class="right-service">
+                <img src="sign.png" alt="" width="12%"> 
+                <br>
+                <h2>Get Residency With Your Property</h2>
+                <p>Obtain Georgian Residency by investing in Georgia</p>
+            </section>
 
 
 
-    </body>
+
+        </div>
+        
 
 
 
@@ -42,6 +250,16 @@
 
 
 
+    </main>
 
 
+
+
+
+
+
+
+
+    
+</body>
 </html>
